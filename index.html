@@ -91,7 +91,7 @@
           <a href="#design-projects" class="hover:text-amber-400 transition-colors">Feed & Carousel</a>
           <a href="#skills" class="hover:text-amber-400 transition-colors">Keahlian</a>
           <a href="#experience" class="hover:text-amber-400 transition-colors">Pengalaman</a>
-          <a href="#contact" class="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-cinema-base font-semibold transition-all">Kontak</a>
+          <a href="#contact" class="px-4 py-2 rounded-lg bg-amber-500 hover:bg-amber-400 text-cinema-base font-semibold transition-all">Kontak & Brief</a>
         </div>
 
         <!-- Mobile Hamburger Button -->
@@ -108,7 +108,7 @@
       <a href="#design-projects" class="mobile-nav-link block py-2 text-base font-medium text-gray-300 hover:text-amber-400">Feed & Carousel</a>
       <a href="#skills" class="mobile-nav-link block py-2 text-base font-medium text-gray-300 hover:text-amber-400">Keahlian</a>
       <a href="#experience" class="mobile-nav-link block py-2 text-base font-medium text-gray-300 hover:text-amber-400">Pengalaman</a>
-      <a href="#contact" class="mobile-nav-link block py-2.5 text-center rounded-lg bg-amber-500 hover:bg-amber-400 text-cinema-base font-semibold">Hubungi Saya</a>
+      <a href="#contact" class="mobile-nav-link block py-2.5 text-center rounded-lg bg-amber-500 hover:bg-amber-400 text-cinema-base font-semibold">Mulai Brief</a>
     </div>
   </nav>
 
@@ -135,8 +135,8 @@
         <a href="#projects" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-cinema-base font-bold text-sm sm:text-base transition-all shadow-lg shadow-amber-500/20 flex items-center justify-center gap-2">
           <i class="bi bi-play-circle-fill"></i> Eksplorasi Karya Video
         </a>
-        <a href="https://drive.google.com/drive/folders/12ont7do20eHp2NWQfgCzjalGoPfv_vEk?usp=drive_link" target="_blank" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-cinema-card hover:bg-cinema-border border border-cinema-border text-gray-200 font-semibold text-sm sm:text-base transition-all flex items-center justify-center gap-2">
-          <i class="bi bi-google-play"></i> Buka Google Drive
+        <a href="#contact" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-cinema-card hover:bg-cinema-border border border-cinema-border text-gray-200 font-semibold text-sm sm:text-base transition-all flex items-center justify-center gap-2">
+          <i class="bi bi-chat-dots-fill text-amber-400"></i> Kirim Request Brief
         </a>
       </div>
     </div>
@@ -150,7 +150,7 @@
         <p class="text-xl sm:text-2xl font-bold font-display text-white">Highlight Editing Pilihan</p>
       </div>
 
-      <!-- Container 16:9 Murni (Tidak Terpotong di Layar HP) -->
+      <!-- Container 16:9 Responsif Murni -->
       <div class="relative w-full aspect-video rounded-2xl overflow-hidden border border-cinema-border shadow-2xl bg-black">
         <iframe 
           src="https://drive.google.com/file/d/1PKOtWWAK0TxfGv2x2zVt-IQN-j7OO7xI/preview" 
@@ -160,17 +160,11 @@
         </iframe>
       </div>
 
-      <div class="mt-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
+      <div class="mt-4 flex items-center justify-between text-xs text-gray-400">
         <span>Format Landscape HD • Premiere Pro & CapCut</span>
-        <div class="flex items-center gap-3">
-          <button onclick="openModal('1PKOtWWAK0TxfGv2x2zVt-IQN-j7OO7xI', 'Master Showreel')" class="text-amber-400 hover:underline flex items-center gap-1">
-            <i class="bi bi-arrows-fullscreen"></i> Buka Fullscreen
-          </button>
-          <span>•</span>
-          <a href="https://drive.google.com/file/d/1PKOtWWAK0TxfGv2x2zVt-IQN-j7OO7xI/view?usp=drive_link" target="_blank" class="text-gray-300 hover:text-white flex items-center gap-1">
-            <i class="bi bi-box-arrow-up-right"></i> Buka di Drive
-          </a>
-        </div>
+        <button onclick="openModal('1PKOtWWAK0TxfGv2x2zVt-IQN-j7OO7xI', 'Master Showreel')" class="text-amber-400 hover:underline flex items-center gap-1">
+          <i class="bi bi-arrows-fullscreen"></i> Buka Fullscreen
+        </button>
       </div>
     </div>
   </section>
@@ -181,10 +175,10 @@
       <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
         <h2 class="text-xs uppercase tracking-widest text-amber-400 font-semibold mb-2">Portofolio Produksi</h2>
         <p class="text-2xl sm:text-3xl font-display font-extrabold text-white">Galeri Karya Video</p>
-        <p class="text-gray-400 text-xs sm:text-sm mt-2">Geser dan pilih kategori di bawah untuk menyaring format karya.</p>
+        <p class="text-gray-400 text-xs sm:text-sm mt-2">Pilih kategori di bawah untuk memfilter format karya.</p>
       </div>
 
-      <!-- Category Filter Pills (Mobile Horizontal Scrollable) -->
+      <!-- Category Filter Pills -->
       <div class="flex items-center gap-2 sm:gap-2.5 overflow-x-auto no-scrollbar pb-3 mb-8 sm:justify-center -mx-4 px-4 sm:mx-0 sm:px-0">
         <button onclick="filterProjects('all')" class="filter-btn active whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-amber-500 text-cinema-base shadow-md">Semua (10)</button>
         <button onclick="filterProjects('featured')" class="filter-btn whitespace-nowrap px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all bg-cinema-card hover:bg-cinema-border text-gray-300 border border-cinema-border">⭐ Tugas Video</button>
@@ -198,7 +192,7 @@
       <!-- Project Cards Grid -->
       <div id="project-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
         
-        <!-- 1. Tugas Video 1 (Featured) -->
+        <!-- 1. Tugas Video 1 -->
         <div class="project-card bg-cinema-card border border-amber-500/50 rounded-2xl p-4 flex flex-col justify-between" data-category="featured">
           <div>
             <div class="flex items-center justify-between mb-3">
@@ -211,13 +205,14 @@
             <h3 class="font-bold text-white text-base mb-1">Tugas Video Showcase I</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Editing naratif dengan komposisi ritmik, color balance rapi, dan pacing visual dinamis.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('1usbpKA8sRYJej1xJZD0l7wRjPGG0Lhre', 'Tugas Video Showcase I')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/1usbpKA8sRYJej1xJZD0l7wRjPGG0Lhre/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('1usbpKA8sRYJej1xJZD0l7wRjPGG0Lhre', 'Tugas Video Showcase I')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
-        <!-- 2. Tugas Video 2 (Featured) -->
+        <!-- 2. Tugas Video 2 -->
         <div class="project-card bg-cinema-card border border-amber-500/50 rounded-2xl p-4 flex flex-col justify-between" data-category="featured">
           <div>
             <div class="flex items-center justify-between mb-3">
@@ -230,9 +225,10 @@
             <h3 class="font-bold text-white text-base mb-1">Tugas Video Showcase II</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Pengolahan visual berkesinambungan dengan penyesuaian sound design dan grading.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('1L_P4uO3F1HZKRmTyc2qt_gbpEETjwOIN', 'Tugas Video Showcase II')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/1L_P4uO3F1HZKRmTyc2qt_gbpEETjwOIN/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('1L_P4uO3F1HZKRmTyc2qt_gbpEETjwOIN', 'Tugas Video Showcase II')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
@@ -249,9 +245,10 @@
             <h3 class="font-bold text-white text-base mb-1">Gaming Content Showcase I</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Fast-paced gameplay editing, shake effect sinkron beat, dan sound effect meme lucu.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('1ehmb8CzVO4Ejr0CTRFSkxmss1JpzU3LL', 'Gaming Content Showcase I')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/1ehmb8CzVO4Ejr0CTRFSkxmss1JpzU3LL/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('1ehmb8CzVO4Ejr0CTRFSkxmss1JpzU3LL', 'Gaming Content Showcase I')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
@@ -268,9 +265,10 @@
             <h3 class="font-bold text-white text-base mb-1">Gaming Content Showcase II</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Subtitle dinamis pop-out, visual punch-in zoom, dan penataan audio foley menghibur.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('1HByIIkCfNj1dYBduQBVYvVg3ccrYoAlB', 'Gaming Content Showcase II')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/1HByIIkCfNj1dYBduQBVYvVg3ccrYoAlB/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('1HByIIkCfNj1dYBduQBVYvVg3ccrYoAlB', 'Gaming Content Showcase II')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
@@ -287,9 +285,10 @@
             <h3 class="font-bold text-white text-base mb-1">Motion Graphics Showcase I</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Transisi berkecepatan dinamis dengan kinetic text berpresisi tinggi.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('1CJUX92YpseMHLvsr3z2e21nJs293QNIZ', 'Motion Graphics Showcase I')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/1CJUX92YpseMHLvsr3z2e21nJs293QNIZ/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('1CJUX92YpseMHLvsr3z2e21nJs293QNIZ', 'Motion Graphics Showcase I')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
@@ -306,9 +305,10 @@
             <h3 class="font-bold text-white text-base mb-1">Motion Graphics Showcase II</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Pop-up aset grafis dengan timing smooth dan efek visual pendukung branding.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('1PE82WvRasG0vGlzjcSMktS4qaW-cWmul', 'Motion Graphics Showcase II')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/1PE82WvRasG0vGlzjcSMktS4qaW-cWmul/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('1PE82WvRasG0vGlzjcSMktS4qaW-cWmul', 'Motion Graphics Showcase II')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
@@ -325,9 +325,10 @@
             <h3 class="font-bold text-white text-base mb-1">Motion Graphics Showcase III</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Animasi promosi produk bergaya modern dengan sound design terintegrasi.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('143T816PMOqidOopaqLS3HmJgG7PcYpyF', 'Motion Graphics Showcase III')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/143T816PMOqidOopaqLS3HmJgG7PcYpyF/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('143T816PMOqidOopaqLS3HmJgG7PcYpyF', 'Motion Graphics Showcase III')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
@@ -344,9 +345,10 @@
             <h3 class="font-bold text-white text-base mb-1">Short Form Corporate Style</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Pacing formal, penataan lower-third elegan, dan penyampaian pesan korporat terstruktur.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('1QK6DlAlhfLMdinCYTLxPmMH0SeRFekuo', 'Short Form Corporate Style')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/1QK6DlAlhfLMdinCYTLxPmMH0SeRFekuo/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('1QK6DlAlhfLMdinCYTLxPmMH0SeRFekuo', 'Short Form Corporate Style')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
@@ -363,9 +365,10 @@
             <h3 class="font-bold text-white text-base mb-1">Short Form Video Voice Over Style</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Sinkronisasi audio narasi dengan b-roll pendukung, subtitle per kata, dan penambah retensi audiens.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('1wJBxYV1Pc62XKM4FdjwN7omueIr7rPCC', 'Short Form Video Voice Over Style')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/1wJBxYV1Pc62XKM4FdjwN7omueIr7rPCC/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('1wJBxYV1Pc62XKM4FdjwN7omueIr7rPCC', 'Short Form Video Voice Over Style')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
@@ -382,9 +385,10 @@
             <h3 class="font-bold text-white text-base mb-1">Quiz Style Video</h3>
             <p class="text-xs text-gray-400 line-clamp-2 mb-4">Format interaktif dengan countdown timer, penataan sound efek tebak-tebakan, dan visual reveal.</p>
           </div>
-          <div class="flex items-center gap-2 pt-2 border-t border-cinema-border/60">
-            <button onclick="openModal('1tglBytKQMkASsXgWO-sOCGcqCpcwovrr', 'Quiz Style Video')" class="flex-1 py-2 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center">Teater</button>
-            <a href="https://drive.google.com/file/d/1tglBytKQMkASsXgWO-sOCGcqCpcwovrr/view?usp=drive_link" target="_blank" class="p-2 text-xs rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-2 border-t border-cinema-border/60">
+            <button onclick="openModal('1tglBytKQMkASsXgWO-sOCGcqCpcwovrr', 'Quiz Style Video')" class="w-full py-2.5 text-xs font-semibold rounded-lg bg-cinema-border hover:bg-amber-500 hover:text-cinema-base text-gray-200 transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Mode Teater
+            </button>
           </div>
         </div>
 
@@ -415,9 +419,10 @@
             <h3 class="font-bold text-white text-lg mb-1">Konten Carousel Corporate</h3>
             <p class="text-xs sm:text-sm text-gray-400 mb-4">Eksplorasi urutan slide interaktif dengan layout konsisten, hierarki tipografi rapi, dan transisi antar-slide seamless.</p>
           </div>
-          <div class="flex items-center gap-3 pt-3 border-t border-cinema-border">
-            <button onclick="openModal('1flE7YE7FUxwQHTu4CKX66lYhppT-8JXY', 'Konten Carousel Corporate')" class="flex-1 py-2.5 text-xs sm:text-sm font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-cinema-base transition-all text-center">Buka Viewer Penuh</button>
-            <a href="https://drive.google.com/file/d/1flE7YE7FUxwQHTu4CKX66lYhppT-8JXY/view?usp=drive_link" target="_blank" class="p-2.5 text-sm rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-3 border-t border-cinema-border">
+            <button onclick="openModal('1flE7YE7FUxwQHTu4CKX66lYhppT-8JXY', 'Konten Carousel Corporate')" class="w-full py-2.5 text-xs sm:text-sm font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-cinema-base transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Viewer Penuh
+            </button>
           </div>
         </div>
 
@@ -434,9 +439,10 @@
             <h3 class="font-bold text-white text-lg mb-1">Single Post Corporate</h3>
             <p class="text-xs sm:text-sm text-gray-400 mb-4">Desain post mandiri dengan komposisi visual terfokus, penempatan logo dan call-to-action yang tegas.</p>
           </div>
-          <div class="flex items-center gap-3 pt-3 border-t border-cinema-border">
-            <button onclick="openModal('1umMY_JSZFSgf8JVad9oKIh61QyJ5QIWz', 'Single Post Corporate')" class="flex-1 py-2.5 text-xs sm:text-sm font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-cinema-base transition-all text-center">Buka Viewer Penuh</button>
-            <a href="https://drive.google.com/file/d/1umMY_JSZFSgf8JVad9oKIh61QyJ5QIWz/view?usp=drive_link" target="_blank" class="p-2.5 text-sm rounded-lg bg-cinema-border hover:text-amber-400 text-gray-300"><i class="bi bi-box-arrow-up-right"></i></a>
+          <div class="pt-3 border-t border-cinema-border">
+            <button onclick="openModal('1umMY_JSZFSgf8JVad9oKIh61QyJ5QIWz', 'Single Post Corporate')" class="w-full py-2.5 text-xs sm:text-sm font-semibold rounded-lg bg-amber-500 hover:bg-amber-400 text-cinema-base transition-all text-center flex items-center justify-center gap-1.5">
+              <i class="bi bi-arrows-fullscreen"></i> Buka Viewer Penuh
+            </button>
           </div>
         </div>
       </div>
@@ -522,7 +528,7 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
+  <!-- Experience Section (Clean - Tanpa Teks Error) -->
   <section id="experience" class="py-14 sm:py-20 border-t border-cinema-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-xl mx-auto mb-10 sm:mb-12">
@@ -537,7 +543,7 @@
             <h3 class="font-bold text-white text-base sm:text-lg">Graphic Designer Intern</h3>
             <span class="text-xs font-semibold px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20 w-fit">Apr 2026 – Jul 2026</span>
           </div>
-          <p class="text-xs font-medium text-gray-300 mb-3">PT Sariling Aneka Energi[cite: 1]</p>
+          <p class="text-xs font-medium text-amber-400/90 mb-3">PT Sariling Aneka Energi[cite: 1]</p>
           <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">Mengerjakan kebutuhan desain dan konten digital perusahaan serta mendukung pembuatan materi visual untuk media sosial dan branding[cite: 1].</p>
         </div>
 
@@ -547,31 +553,80 @@
             <h3 class="font-bold text-white text-base sm:text-lg">Social Media Design Project</h3>
             <span class="text-xs font-semibold px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20 w-fit">2026</span>
           </div>
-          <p class="text-xs font-medium text-gray-300 mb-3">Artha Mahardika Sejahtera[cite: 1]</p>
+          <p class="text-xs font-medium text-amber-400/90 mb-3">Artha Mahardika Sejahtera[cite: 1]</p>
           <p class="text-xs sm:text-sm text-gray-400 leading-relaxed">Merancang dan menghasilkan desain konten media sosial, termasuk Instagram Feed, Carousel edukatif/promosi, Cover Reels, dan materi promosi digital pendukung branding[cite: 1].</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact & Interactive Brief Request Section (Kembali Lengkap) -->
   <section id="contact" class="py-14 sm:py-20 bg-cinema-card/50 border-t border-cinema-border">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-xs uppercase tracking-widest text-amber-400 font-semibold mb-2">Mulai Kolaborasi</h2>
-      <p class="text-2xl sm:text-4xl font-display font-extrabold text-white mb-4">Siap Menggarap Proyek Anda</p>
-      <p class="text-gray-400 text-xs sm:text-base max-w-xl mx-auto mb-8">Butuh video short-form beretensi tinggi, motion graphics, atau materi feed media sosial? Hubungi saya langsung via WhatsApp atau Email.</p>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-xs uppercase tracking-widest text-amber-400 font-semibold mb-2">Mulai Kolaborasi</h2>
+        <p class="text-2xl sm:text-4xl font-display font-extrabold text-white mb-3">Siap Menggarap Proyek Anda</p>
+        <p class="text-gray-400 text-xs sm:text-sm max-w-xl mx-auto">Kirimkan rincian kebutuhan proyek video editing atau desain grafis Anda langsung lewat formulir brief di bawah ini.</p>
+      </div>
 
-      <!-- Quick Action Buttons -->
+      <!-- Interactive Brief Form -->
+      <div class="bg-cinema-card border border-cinema-border rounded-2xl p-6 sm:p-8 mb-10 shadow-2xl">
+        <h3 class="text-lg font-bold text-white mb-5 flex items-center gap-2">
+          <i class="bi bi-file-earmark-text-fill text-amber-400"></i> Formulir Request Brief Proyek
+        </h3>
+
+        <form id="brief-form" onsubmit="handleSendWhatsApp(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="client-name" class="block text-xs font-semibold text-gray-300 mb-1.5">Nama Anda / Perusahaan *</label>
+              <input type="text" id="client-name" required placeholder="Contoh: Budi Santoso" class="w-full bg-cinema-base border border-cinema-border rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-500 transition-colors">
+            </div>
+            <div>
+              <label for="service-type" class="block text-xs font-semibold text-gray-300 mb-1.5">Layanan yang Dibutuhkan *</label>
+              <select id="service-type" class="w-full bg-cinema-base border border-cinema-border rounded-xl px-4 py-2.5 text-sm text-white focus:outline-none focus:border-amber-500 transition-colors">
+                <option value="Short-Form Video (TikTok/Reels/Shorts)">Short-Form Video (TikTok / Reels / Shorts)</option>
+                <option value="Corporate / Company Video">Corporate / Company Video</option>
+                <option value="Motion Graphics & Typography">Motion Graphics & Typography</option>
+                <option value="Gaming Content / Reaction">Gaming Content / Reaction Highlights</option>
+                <option value="Social Media Carousel / Feed Design">Social Media Carousel / Feed Design</option>
+                <option value="Paket Lengkap (Video + Desain Feed)">Paket Lengkap (Video + Desain Feed)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="project-quantity" class="block text-xs font-semibold text-gray-300 mb-1.5">Estimasi Jumlah Konten / Durasi</label>
+              <input type="text" id="project-quantity" placeholder="Misal: 5 video short-form / 1 carousel 5 slide" class="w-full bg-cinema-base border border-cinema-border rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-500 transition-colors">
+            </div>
+            <div>
+              <label for="project-deadline" class="block text-xs font-semibold text-gray-300 mb-1.5">Target Deadline Pengerjaan</label>
+              <input type="text" id="project-deadline" placeholder="Misal: 3–5 hari ke depan" class="w-full bg-cinema-base border border-cinema-border rounded-xl px-4 py-2.5 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-500 transition-colors">
+            </div>
+          </div>
+
+          <div>
+            <label for="project-details" class="block text-xs font-semibold text-gray-300 mb-1.5">Rincian Brief / Catatan Konsep Video *</label>
+            <textarea id="project-details" required rows="3" placeholder="Ceritakan konsep video/desain, tone yang diinginkan, referensi gaya, atau instruksi khusus..." class="w-full bg-cinema-base border border-cinema-border rounded-xl p-4 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-amber-500 transition-colors resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/25">
+            <i class="bi bi-whatsapp text-lg"></i> Kirim Brief ke WhatsApp (+62 823-1738-2721)
+          </button>
+        </form>
+      </div>
+
+      <!-- Quick Action Buttons & Info -->
       <div class="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-md mx-auto mb-10">
-        <a href="https://wa.me/6282317382721?text=Halo%20Adiel,%20saya%20tertarik%20bekerja%20sama%20untuk%20proyek%20video/desain." target="_blank" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm sm:text-base transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20">
-          <i class="bi bi-whatsapp text-lg"></i> Hubungi via WhatsApp
+        <a href="https://wa.me/6282317382721?text=Halo%20Adiel,%20saya%20tertarik%20bekerja%20sama%20untuk%20proyek%20video/desain." target="_blank" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-emerald-700/80 hover:bg-emerald-600 border border-emerald-500/40 text-white font-semibold text-sm transition-all flex items-center justify-center gap-2">
+          <i class="bi bi-chat-text-fill"></i> Chat Langsung WA
         </a>
-        <button onclick="copyEmail()" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-cinema-card hover:bg-cinema-border border border-cinema-border text-gray-200 font-semibold text-sm sm:text-base transition-all flex items-center justify-center gap-2">
-          <i class="bi bi-copy"></i> Salin Email
+        <button onclick="copyEmail()" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-cinema-card hover:bg-cinema-border border border-cinema-border text-gray-200 font-semibold text-sm transition-all flex items-center justify-center gap-2">
+          <i class="bi bi-copy"></i> Salin Alamat Email
         </button>
       </div>
 
-      <!-- Quick Contact Info Cards -->
+      <!-- Contact Info Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-lg mx-auto text-left">
         <div class="p-4 rounded-xl bg-cinema-card border border-cinema-border flex items-center gap-3">
           <div class="w-10 h-10 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-400"><i class="bi bi-telephone text-lg"></i></div>
@@ -596,9 +651,9 @@
     <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
       <p>&copy; 2026 Adiel Baja Kelana. All rights reserved.</p>
       <div class="flex items-center gap-4">
-        <a href="https://drive.google.com/drive/folders/12ont7do20eHp2NWQfgCzjalGoPfv_vEk?usp=drive_link" target="_blank" class="hover:text-amber-400 transition-colors">Portofolio Drive[cite: 1]</a>
+        <a href="#showreel" class="hover:text-amber-400 transition-colors">Showreel</a>
         <a href="#projects" class="hover:text-amber-400 transition-colors">Karya Video</a>
-        <a href="#contact" class="hover:text-amber-400 transition-colors">Kontak</a>
+        <a href="#contact" class="hover:text-amber-400 transition-colors">Kontak & Brief</a>
       </div>
     </div>
   </footer>
@@ -664,7 +719,7 @@
       });
     }
 
-    // 3. Before/After Color Grading Slider (Touch & Mouse Support)
+    // 3. Before/After Color Grading Slider
     const gradingSlider = document.getElementById('grading-slider');
     const beforeContainer = document.getElementById('before-img-container');
 
@@ -693,12 +748,33 @@
       modal.classList.add('hidden');
     }
 
-    // Close modal on background click
     modal.addEventListener('click', (e) => {
       if (e.target === modal) closeModal();
     });
 
-    // 5. Copy Email & Toast Notification
+    // 5. Handle Brief Submission via WhatsApp
+    function handleSendWhatsApp(e) {
+      e.preventDefault();
+      const name = document.getElementById('client-name').value.trim();
+      const service = document.getElementById('service-type').value;
+      const quantity = document.getElementById('project-quantity').value.trim() || '-';
+      const deadline = document.getElementById('project-deadline').value.trim() || '-';
+      const details = document.getElementById('project-details').value.trim();
+
+      const message = `Halo Adiel, saya ingin mengajukan brief proyek:\n\n` +
+                      `*Nama / Klien:* ${name}\n` +
+                      `*Kebutuhan:* ${service}\n` +
+                      `*Estimasi Jumlah/Durasi:* ${quantity}\n` +
+                      `*Target Deadline:* ${deadline}\n` +
+                      `*Rincian Brief:* ${details}\n\n` +
+                      `Mohon info ketersediaan jadwal dan estimasi biayanya. Terima kasih!`;
+
+      const encodedMessage = encodeURIComponent(message);
+      const waUrl = `https://wa.me/6282317382721?text=${encodedMessage}`;
+      window.open(waUrl, '_blank');
+    }
+
+    // 6. Copy Email & Toast Notification
     function showToast(msg) {
       const toast = document.getElementById('toast');
       const toastMsg = document.getElementById('toast-msg');
