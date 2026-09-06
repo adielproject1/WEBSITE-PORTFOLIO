@@ -48,7 +48,7 @@
 
     /* Glass Effect */
     .glass-nav {
-      background: rgba(7, 8, 10, 0.85);
+      background: rgba(7, 8, 10, 0.92);
       backdrop-filter: blur(14px);
       -webkit-backdrop-filter: blur(14px);
     }
@@ -78,10 +78,15 @@
   <!-- Navbar -->
   <nav class="fixed top-0 left-0 right-0 z-40 glass-nav border-b border-cinema-border/70">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16 sm:h-20">
-        <a href="#" class="flex items-center gap-2 group">
-          <span class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/40 flex items-center justify-center text-amber-400 font-display font-bold text-base group-hover:scale-105 transition-transform">A</span>
-          <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-white">ADIEL<span class="text-amber-400">.KELANA</span></span>
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo Lengkap + Substatus -->
+        <a href="#" class="flex items-center gap-3 group py-2">
+          <span class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/40 flex items-center justify-center text-amber-400 font-display font-bold text-lg group-hover:scale-105 transition-transform flex-shrink-0">A</span>
+          <div class="flex flex-col">
+            <span class="font-display font-bold text-base sm:text-xl tracking-tight text-white leading-tight">ADIEL BAJA KELANA</span>
+            <span class="text-[10px] sm:text-xs text-gray-400 font-semibold tracking-wider uppercase mt-0.5">Video Editor & Graphic Designer</span>
+          </div>
         </a>
 
         <!-- Desktop Navigation -->
@@ -113,7 +118,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="relative pt-24 pb-12 sm:pt-36 sm:pb-24 overflow-hidden">
+  <section class="relative pt-28 pb-12 sm:pt-36 sm:pb-24 overflow-hidden">
     <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-72 sm:w-[600px] h-72 sm:h-[600px] bg-amber-500/10 rounded-full blur-[100px] sm:blur-[140px] pointer-events-none"></div>
 
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
@@ -142,7 +147,7 @@
     </div>
   </section>
 
-  <!-- Showreel Section (Responsif 16:9 Mobile & Desktop) -->
+  <!-- Showreel Section (Responsif Penuh di Mobile Portrait) -->
   <section id="showreel" class="py-10 sm:py-16 bg-cinema-card/30 border-y border-cinema-border/50">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
       <div class="text-center mb-6 sm:mb-8">
@@ -150,8 +155,8 @@
         <p class="text-xl sm:text-2xl font-bold font-display text-white">Highlight Editing Pilihan</p>
       </div>
 
-      <!-- Container 16:9 Responsif Murni -->
-      <div class="relative w-full aspect-video rounded-2xl overflow-hidden border border-cinema-border shadow-2xl bg-black">
+      <!-- Wadah Video: Menggunakan min-h-[260px] sm:min-h-[420px] agar video Drive tidak terpotong header -->
+      <div class="relative w-full aspect-[16/10] sm:aspect-video min-h-[260px] sm:min-h-[420px] rounded-2xl overflow-hidden border border-cinema-border shadow-2xl bg-black">
         <iframe 
           src="https://drive.google.com/file/d/1PKOtWWAK0TxfGv2x2zVt-IQN-j7OO7xI/preview" 
           class="absolute inset-0 w-full h-full border-0" 
@@ -162,7 +167,7 @@
 
       <div class="mt-4 flex items-center justify-between text-xs text-gray-400">
         <span>Format Landscape HD • Premiere Pro & CapCut</span>
-        <button onclick="openModal('1PKOtWWAK0TxfGv2x2zVt-IQN-j7OO7xI', 'Master Showreel')" class="text-amber-400 hover:underline flex items-center gap-1">
+        <button onclick="openModal('1PKOtWWAK0TxfGv2x2zVt-IQN-j7OO7xI', 'Master Showreel')" class="text-amber-400 hover:underline flex items-center gap-1.5 font-semibold">
           <i class="bi bi-arrows-fullscreen"></i> Buka Fullscreen
         </button>
       </div>
@@ -199,7 +204,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/30">⭐ Unggulan</span>
               <span class="text-xs text-gray-400">Tugas Video #1</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/1usbpKA8sRYJej1xJZD0l7wRjPGG0Lhre/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Tugas Video Showcase I</h3>
@@ -219,7 +224,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/30">⭐ Unggulan</span>
               <span class="text-xs text-gray-400">Tugas Video #2</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/1L_P4uO3F1HZKRmTyc2qt_gbpEETjwOIN/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Tugas Video Showcase II</h3>
@@ -239,7 +244,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/30">🎮 Gaming</span>
               <span class="text-xs text-gray-400">Gameplay Reel</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/1ehmb8CzVO4Ejr0CTRFSkxmss1JpzU3LL/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Gaming Content Showcase I</h3>
@@ -259,7 +264,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/30">🎮 Gaming</span>
               <span class="text-xs text-gray-400">Highlights</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/1HByIIkCfNj1dYBduQBVYvVg3ccrYoAlB/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Gaming Content Showcase II</h3>
@@ -279,7 +284,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">⚡ Motion</span>
               <span class="text-xs text-gray-400">Typography</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/1CJUX92YpseMHLvsr3z2e21nJs293QNIZ/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Motion Graphics Showcase I</h3>
@@ -299,7 +304,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">⚡ Motion</span>
               <span class="text-xs text-gray-400">Assets Animation</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/1PE82WvRasG0vGlzjcSMktS4qaW-cWmul/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Motion Graphics Showcase II</h3>
@@ -319,7 +324,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">⚡ Motion</span>
               <span class="text-xs text-gray-400">Promo Asset</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/143T816PMOqidOopaqLS3HmJgG7PcYpyF/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Motion Graphics Showcase III</h3>
@@ -339,7 +344,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/30">🏢 Corporate</span>
               <span class="text-xs text-gray-400">Professional</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/1QK6DlAlhfLMdinCYTLxPmMH0SeRFekuo/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Short Form Corporate Style</h3>
@@ -359,7 +364,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">🎙️ Voice Over</span>
               <span class="text-xs text-gray-400">Storytelling</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/1wJBxYV1Pc62XKM4FdjwN7omueIr7rPCC/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Short Form Video Voice Over Style</h3>
@@ -379,7 +384,7 @@
               <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md bg-rose-500/10 text-rose-400 border border-rose-500/30">❓ Quiz</span>
               <span class="text-xs text-gray-400">Interactive</span>
             </div>
-            <div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden bg-black mb-3">
+            <div class="relative w-full aspect-[9/14] rounded-xl overflow-hidden bg-black mb-3">
               <iframe src="https://drive.google.com/file/d/1tglBytKQMkASsXgWO-sOCGcqCpcwovrr/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-base mb-1">Quiz Style Video</h3>
@@ -413,7 +418,7 @@
               <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md bg-amber-500/10 text-amber-400 border border-amber-500/30">Multi-Slide (1–5)</span>
               <span class="text-xs text-gray-400">Instagram Carousel</span>
             </div>
-            <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-black mb-4">
+            <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-black mb-4 min-h-[280px]">
               <iframe src="https://drive.google.com/file/d/1flE7YE7FUxwQHTu4CKX66lYhppT-8JXY/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-lg mb-1">Konten Carousel Corporate</h3>
@@ -433,7 +438,7 @@
               <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/30">Single Feed</span>
               <span class="text-xs text-gray-400">Corporate Branding</span>
             </div>
-            <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-black mb-4">
+            <div class="relative w-full aspect-square rounded-xl overflow-hidden bg-black mb-4 min-h-[280px]">
               <iframe src="https://drive.google.com/file/d/1umMY_JSZFSgf8JVad9oKIh61QyJ5QIWz/preview" class="absolute inset-0 w-full h-full border-0" allow="autoplay; fullscreen" loading="lazy"></iframe>
             </div>
             <h3 class="font-bold text-white text-lg mb-1">Single Post Corporate</h3>
@@ -528,7 +533,7 @@
     </div>
   </section>
 
-  <!-- Experience Section (Clean - Tanpa Teks Error) -->
+  <!-- Experience Section -->
   <section id="experience" class="py-14 sm:py-20 border-t border-cinema-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-xl mx-auto mb-10 sm:mb-12">
@@ -560,7 +565,7 @@
     </div>
   </section>
 
-  <!-- Contact & Interactive Brief Request Section (Kembali Lengkap) -->
+  <!-- Contact & Interactive Brief Request Section -->
   <section id="contact" class="py-14 sm:py-20 bg-cinema-card/50 border-t border-cinema-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-10">
@@ -658,14 +663,15 @@
     </div>
   </footer>
 
-  <!-- Theater / Modal Video Player -->
-  <div id="video-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-3 sm:p-6">
-    <div class="relative w-full max-w-4xl bg-cinema-card border border-cinema-border rounded-2xl overflow-hidden shadow-2xl">
-      <div class="p-3 sm:p-4 border-b border-cinema-border flex items-center justify-between">
+  <!-- Theater / Modal Video Player (Responsif Portrait HP) -->
+  <div id="video-modal" class="fixed inset-0 z-50 bg-black/95 backdrop-blur-md hidden items-center justify-center p-2 sm:p-6">
+    <div class="relative w-full max-w-4xl bg-cinema-card border border-cinema-border rounded-2xl overflow-hidden shadow-2xl flex flex-col">
+      <div class="p-3 sm:p-4 border-b border-cinema-border flex items-center justify-between bg-cinema-base">
         <h4 id="modal-title" class="text-xs sm:text-sm font-bold text-white truncate pr-4">Video Teater</h4>
-        <button onclick="closeModal()" aria-label="Tutup" class="text-gray-400 hover:text-white text-xl px-2">&times;</button>
+        <button onclick="closeModal()" aria-label="Tutup" class="text-gray-400 hover:text-white text-2xl px-2 leading-none">&times;</button>
       </div>
-      <div class="relative w-full aspect-video bg-black">
+      <!-- Aspek rasio modal disesuaikan agar di HP portrait tidak tenggelam -->
+      <div class="relative w-full aspect-[16/10] sm:aspect-video min-h-[300px] sm:min-h-[480px] bg-black">
         <iframe id="modal-iframe" src="" class="w-full h-full border-0" allow="autoplay; fullscreen"></iframe>
       </div>
     </div>
